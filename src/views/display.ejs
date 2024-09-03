@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Forms</title>
+</head>
+<body>
+    <h1>Submitted Forms</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Department</th>
+                <th>Role</th>
+                <th>Brand</th>
+                <th>Shift</th>
+                <th>Date</th>
+                <th>Engineer Name</th>
+                <th>In-Charge Name</th>
+                <th>Item</th>
+                <th>Time</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% forms.forEach(form => { %>
+                <tr>
+                    <td><%= form.department %></td>
+                    <td><%= form.role %></td>
+                    <td><%= form.brand %></td>
+                    <td><%= form.shift %></td>
+                    <td><%= form.date %></td>
+                    <td><%= form.engineer_name %></td>
+                    <td><%= form.in_charge_name %></td>
+                    <td><%= form.item %></td>
+                    <td><%= form.time %></td>
+                </tr>
+            <% }) %>
+        </tbody>
+    </table>
+</body>
+</html>
