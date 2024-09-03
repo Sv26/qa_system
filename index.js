@@ -17,7 +17,7 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
 // Routes
-app.use('/', formRoutes);
+app.use('/api', formRoutes);
 
 // Start the server
 app.listen(PORT, function() {
